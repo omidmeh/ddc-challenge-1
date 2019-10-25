@@ -1,74 +1,68 @@
+In this Digital Developer Conference challenge, you'll learn how to deploy your first Cloud Foundry application to IBM Cloud using an automated deployment through an IBM Cloud DevOps Toolchain. The toolchain will then build and deploy your application to IBM Cloud when you click a **Deploy to IBM Cloud** button in a later step.
 
- TODOs: 
- - Remove wording of "Carbon Tutorial Vue" from title of page
- - Clean up repo and move to IBMCode
- - Change Deploy to IBM Cloud button to point to new repo
- - Add screen shot of new app in the last step
- - Test everything with a fresh account
+The toolchain that will be created for you looks like this:
 
+![IBM Cloud toolchain](images/toolchain.png)
 
-# Deploy your first app to IBM Cloud
+This toolchain has four components:
 
-In this challenge we will be deploying our very first Cloud Foundry application to IBM Cloud using an automated deployment through an IBM Cloud DevOps Toolchain. This toolchain will then build and deploy your application to IBM Cloud when you click on the **Deploy to IBM Cloud** button further below.
-
-## Overview
-
-The toolchain that will be created for us looks like this:
-
-
-![IBM Cloud toolchain](./images/toolchain.png)
-
-This toolchain has 4 components:
-1. Issue management through a hosted GitLab instance on IBM Cloud
-2. A git repo hosted on IBM Cloud
-3. The Eclipse Orion web IDE
-4. A delivery pipeline to build and deploy your application to IBM Cloud
+1. Issue management through a hosted GitLab instance on IBM Cloud.
+2. A git repo hosted on IBM Cloud.
+3. The Eclipse Orion web IDE.
+4. A delivery pipeline to build and deploy your application to IBM Cloud.
 
 The pipeline that will build and deploy your application looks like this:
 
-![Build and Deploy Pipeline](./images/pipeline.png)
+![Build and Deploy Pipeline](images/pipeline.png)
 
-This pipeline has the following 2 steps:
+This pipeline has the following two steps:
 
-1. Build - Your application code will be pulled from your repo and the dependencies will be built
-2. Deploy - Your application build artifacts will then be deployed to IBM Cloud
+1. Build: Your application code will be pulled from your repo and the dependencies will be built.
+2. Deploy: Your application's build artifacts will then be deployed to IBM Cloud.
+
+## Prerequisites
+
+List pre-reqs here.
+
+## Estimated time
+
+Completing this tutorial should take about 30 minutes.
 
 ## Steps
 
-1. Click on the **Deploy to IBM Cloud** button below
+1. Click the **Deploy to IBM Cloud** link below.
 
+   [![Deploy to IBM Cloud](https://cloud.ibm.com/devops/setup/deploy/button.svg)](https://cloud.ibm.com/devops/setup/deploy?repository=https://github.com/omidmeh/ddc-challenge-1.git&branch=master)
 
-   `TODO: Change the repo address in this button to point to the new repo`
+2. You will be prompted to sign into IBM Cloud. Enter your account information if you have not already signed in.
 
-   [![Deploy to IBM Cloud](https://cloud.ibm.com/devops/setup/deploy/button.png)](https://cloud.ibm.com/devops/setup/deploy?repository=https://github.com/omidmeh/carbon-tutorial-vue&branch=vue-step-1)
+3. The toolchain creation page opens. Enter a new name for your toolchain.
 
-2. Then, you might be asked to sign into IBM Cloud. Sign in if you aren't already.
+![new name](images/newName.png)
 
-3. Next, you will be taken to the toolchain creation page. Enter a new name for your toolchain.
+4. Click on **Delivery Pipeline** in the *Tool Integrations* section. You will need to update your pipeline configuration settings.
 
-![new name](./images/newName.png)
+![Tool integrations](images/toolIntegrations.png)
 
-4. After that, click on **Delivery Pipeline** in the *Tool Integrations* section. This will open up some pipeline configurations that we need to set.
+5. Click the **Create** button next to **IBM Cloud API Key** field. A pop-up window opens.
 
-![Tool integrations](./images/toolIntegrations.png)
+![pipeline configurations](images/pipelineConfigurations.png)
 
-5. There should be a field asking for an *IBM Cloud API Key*. Click on the blue **Create** button next to that field.
+6. The window asks if you want to create a new API key for this pipeline. Click **Create**.
 
-![pipeline configurations](./images/pipelineConfigurations.png)
+![API popup](images/APICreate.png)
 
-6. A new prompt will then pop up and ask if you want to create a new API key for this pipeline. Click **Create**.
+7. You will see information such as **Region**, **Space**, and **Organization** displayed. Click **Create** at the top right of the page. Your new toolchain is displayed.
 
-![API popup](./images/APICreate.png)
+8. You can click on the pipeline to view your application being built or you can remain on the toolchain page until the pipeline finishes building.
 
-7. Once that is done, you will see some information such as *Region*, *Space*, *Organization* appear. This means you are good to go, click on **Create** at the top right of the page.
+9. From the toolchain page, you can go directly to your application by clicking **Visit App URL** next to the name of your toolchain.
 
-8. Then, you will be taken to your new toolchain. From here you can click on the pipeline if you want to view your application being built or you can remain on the toolchain page until the pipeline is done building.
+![View app URL](images/viewAppURL.png)
 
-9. From the toolchain page, you will now have the ability to go directly to your application by clicking on the **Visit app URL** next to the title of your toolchain. 
+You should see the following image on the homepage of your new application:
 
-![View app URL](./images/viewAppURL.png)
-
-`TODO: Insert image of app`
+![thumbs up](./images/thumbsUp.png)
 
 ## Summary
-In this challenge we deployed our first application using the IBM Cloud DevOps Toolchains which allowed us to automatically build and push the application to IBM Cloud. Be sure to explore the app that you deployed and check out the other challenges.
+In this challenge, you deployed your first application using IBM Cloud DevOps Toolchains, which enabled you to automatically build and push the application to IBM Cloud. Be sure to explore your newly deployed app, and remember to complete the other challenges.
