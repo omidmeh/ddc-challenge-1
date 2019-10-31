@@ -2,4 +2,4 @@
 applications:
  - name: first-app
    random-route: true
-   memory: 256M
+   memory: 64M

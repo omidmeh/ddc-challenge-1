@@ -62,6 +62,8 @@ Completing this tutorial should take about 30 minutes.
 
 9. From the toolchain page, you can go directly to your application by clicking **Visit App URL** next to the name of your toolchain.
 
+    **Note**: Due to limitations of Internet Explorer and Microsoft Edge, the application will not display in those browsers. Instead, it is recommended that you open your application using Firefox, Chrome, or Safari instead.
+
 ![View app URL](images/viewAppURL.png)
 
 You should see the following image on the homepage of your new application:
