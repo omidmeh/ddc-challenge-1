@@ -38,6 +38,8 @@ Completing this tutorial should take about 30 minutes.
 
 3. The toolchain creation page opens. Enter a new name for your toolchain.
 
+   Take note of the Region that shows up for you under **Select Region** we will need to use this region in a later section. Your region might not be *Dallas* as the toolchain tries to select the region closest to you. 
+
 ![new name](images/newName.png)
 
 4. Click on **Delivery Pipeline** in the *Tool Integrations* section. You will need to update your pipeline configuration settings.
@@ -52,7 +54,9 @@ Completing this tutorial should take about 30 minutes.
 
 ![API popup](images/APICreate.png)
 
-7. You will see information such as **Region**, **Space**, and **Organization** displayed. Click **Create** at the top right of the page. Your new toolchain is displayed.
+7. You will see information such as **Region**, **Space**, and **Organization** displayed. If no organization or space shows up, ensure that the **Region** field matches the region from before. 
+
+8. Click **Create** at the top right of the page. Your new toolchain is displayed.
 
 8. You can click on the pipeline to view your application being built or you can remain on the toolchain page until the pipeline finishes building.
 
